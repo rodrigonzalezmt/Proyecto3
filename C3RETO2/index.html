@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+<style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+</style>
+	
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+	<script type="text/javascript" src="JS/script.js"></script>
+	<script type="text/javascript" src="JS/script_client.js"></script>
+</head>
+<body>
+
+    <div id="resultado"></div>
+
+	<input type="number" id="miId" placeholder="ID">
+	<input type="text" id="brand" placeholder="BRAND">
+	<input type="number" id="model" placeholder="MODEL">
+	<input type="number" id="category_id" placeholder="CATEGORY_ID">
+    <input type="text" id="name" placeholder="NAME"><br>
+
+
+	<button onclick="registro()">Ingresar</button>
+	
+	<button onclick="actualizar()">Actualizar</button>
+    
+	<button onclick="borrar()">Borrar</button>
+
+	<button onclick="obtenerItems()">Mostrar</button>
+
+	<button onclick="obtenerItemEspecifico()">Info</button>
+	
+
+	</div>
+
+	<div>
+
+		<table>
+			<tbody id="miResultado">
+
+		</tbody>
+		</table>
+	
+	</div>
+
+	<div>
+	<input type="number" id="clientId" placeholder="ID">
+	<input type="text" id="clientName" placeholder="NAME">
+	<input type="email" id="clientEmail" placeholder="em@il">
+	<input type="number" id="clientAge" placeholder="AGE"><br>
+
+
+	<button onclick="registroClient()">Registrar</button>
+	
+	<button onclick="actualizarClient()">Actualizar</button>
+    
+	<button onclick="borrarClient()">Borrar</button>
+
+	<button onclick="obtenerItems()">Mostrar</button>
+
+	<button onclick="obtenerClientEspecifico()">Info</button>
+
+	
+
+	</div>
+	<div>
+
+		<table>
+			<tbody id="resultado">
+					
+			</tbody>
+		</table>
+		
+	</div>
+
+</body>
+</html>
